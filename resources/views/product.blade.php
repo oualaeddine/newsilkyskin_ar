@@ -5,16 +5,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-     
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link 
-    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
-    rel="stylesheet"  type='text/css'>    
-    
+    <link
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+    rel="stylesheet"  type='text/css'>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" />
 
 
@@ -23,11 +23,11 @@
 
    <!-- Global site tag (gtag.js) - Google Analytics -->
 
-  
+
   </head>
   <body>
     <div class="text-center sold sticky_2">
-        <p>تخفيض 50 % + توصيل مجاني</p>
+        <p>تخفيض 11.11 % + توصيل مجاني</p>
       </div>
 
       <header>
@@ -38,41 +38,41 @@
                 aria-label="Toggle navigation">
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                
+
               </div>
               <a class="navbar-brand" href="{{ url('/') }}" >
                   <img src="{{ url('/app_logo.png') }}" alt="app-icon" ></a>
             </nav>
           </div>
-       
+
       </div>
       </header>
-    
+
     <main>
         <section class="section-1-product" id="section-1-product">
-        
+
             <div class="container text-center">
               <div class="row">
-                
+
                 <div class="col-md-6 img-responsive" >
-    
+
                   <form action="{{ url('/confirm') }}" method="post" enctype="multipart/form-data">
                     @csrf
                   <label class="" for="white" data-aos="fade_in" data-aos-duration="1000" id="white">
-    
+
                     <img src="{{ url('assets/assets/product-1.jpg') }}" class="image-pg-3-1" alt="image-pg-2">
-    
+
                   </label>
-    
+
                   <label class="pink-hidden"  data-aos="fade_in" data-aos-duration="1000" for="pink" id="pink">
                     <img src="{{ url('assets/assets/product-2.jpg') }}" class="image-pg-3-2" alt="image-pg-2">
                   </label>
-                  
+
                 </div>
                 <div class="col-md-6 text-first text-right" data-aos="fade-left" data-aos-duration="1000">
-                  <h1>جهاز ليزر سيلكي سكن</h1> 
-    
-                  <hr> 
+                  <h1>جهاز ليزر سيلكي سكن</h1>
+
+                  <hr>
                   ({{$nb_rating}} تقييم )
               @if($stars_nb == 5)
               <i class="fa fa-star"></i>
@@ -105,37 +105,37 @@
               <i class="fa fa-star-o"></i>
               <i class="fa fa-star-o"></i>
               @endif
-                  <hr> 
-                 
+                  <hr>
+
                   <div class="discount">
                     <h3 class="price_1">{{$price}} دج</h3>
                     <h3 class="price_2">{{$discount_p}} دج -</h3>
                   </div>
-                 
+
                   <hr>
-    
+
                      <p  style="font-family: cairo" id="color-text">اختر اللون - الأبيض</p>
                      <input type="radio" class="color-swatch--pink" name="p_color" value="pink"  id="pink">
                      <input type="radio" class="color-swatch--white" name="p_color" value="white" id="white" checked>
                      <hr>
-                     <label for="Qte" > : الكمية </label>                 
+                     <label for="Qte" > : الكمية </label>
                      <div class="input-group">
                       <div class="col-md-9"></div>
                       <span class="input-group-btn"><button class="btn btn-light value-control" type="button" data-action="minus" data-min="1"  data-target="font-size"><i class="fa fa-minus"></i></button></span>
                       <input type="number" value="1" min="1" max="10" oninvalid="InvalidMsg(this);" onchange="this.setCustomValidity('')" class="form-control col-md-2 number_ltr" id="font-size" name="qte"/>
                       <span class="input-group-btn"><button class="btn btn-light value-control" type="button" data-action="plus" data-max="10" data-target="font-size"><i class="fa fa-plus"></i></button></span>
-                    </div>    
+                    </div>
                      <hr>
-    
+
                      <div class="confirm-p text-center">
                       <button class="btn primary-btn-2 btn-primary btn-lg"  role="submit" id="btn-shaky-3"> تأكيد طلبك</a>
-                     </div>                
+                     </div>
                   </form>
                   </div>
-               </div>         
+               </div>
               </div>
-             
-    
+
+
           </section>
 
        <section class="how_to">
@@ -147,7 +147,7 @@
                   <div class="card">
                     <div class="card-header" id="headingOne">
                       <div class="row">
-                        
+
                         <div class="col-sm-8">
                         <button class="btn "  style="float:left;font-size: 2vmin;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                           <i class="fas fa-arrow-down"></i>
@@ -158,7 +158,7 @@
                         </div>
                       </div>
                     </div>
-                
+
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                       <div class="card-body">
                         <p style="text-align: right;"><strong>لجسم اكثر نعومة واحساس بشعور الأنوثة الطاغية &nbsp;&nbsp;</strong></p>
@@ -186,7 +186,7 @@
                   <div class="card">
                     <div class="card-header" id="headingTwo">
                       <div class="row">
-                        
+
                      <div class="col-sm-2">
                       <button class="btn "  style="float:left;font-size: 2vmin;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <i class="fas fa-arrow-down"></i>
@@ -209,7 +209,7 @@
                   <div class="card">
                     <div class="card-header" id="headingThree">
                       <div class="row">
-                        
+
                      <div class="col-sm-2">
                       <button class="btn "  style="float:left;font-size: 2vmin;" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <i class="fas fa-arrow-down"></i>
@@ -257,22 +257,22 @@
                       </div>
                     </div>
                   </div>
-                  
-  
-                  
+
+
+
             </div>
-            
+
           </div>
-          
+
         </div>
         <hr>
         </div>
       </section>
-         
+
           <section class="section-2-product" id="section-2-product">
-        
+
             <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-          
+
                 <div class="row">
                      <div class="col-md-3 text-center">
                           <h2>Let customers speak for us</h2>
@@ -310,11 +310,11 @@
                           <h6>From {{$nb_rating}} reviews</h6>
                           <a class="nav-link" href="#"><i class="fab fa-instagram fa-3x"></i></a>
                      </div>
-      
+
                      <div class="col-md-9 text-center">
-                      
+
                       <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-      
+
                         <a class="carousel-control-prev" href="#blogCarousel" role="button" data-slide="prev">
                           <i class="fa fa-arrow-left"></i>
                           <span class="sr-only">Previous</span>
@@ -323,17 +323,17 @@
                           <i class="fa fa-arrow-right"></i>
                           <span class="sr-only" style="color: black">Next</span>
                         </a>
-      
+
                         <!-- Carousel items -->
                         <div class="carousel-inner" >
-                   
+
                           @foreach ($rating as $rate)
-                         
+
                           @if($rate['active'] == 1)
                           <div class="carousel-item active">
-      
+
                             <div class="col-md-4">
-      
+
                               <div class="rating">
                                 @if($rate['rating']== 5)
                                 <i class="fa fa-star"></i>
@@ -346,7 +346,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i> 
+                                <i class="fa fa-star-o"></i>
                                 @elseif( $rate['rating'] == 3)
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -373,10 +373,10 @@
                               <div class="content">
                                 <p>{{json_encode($rate['content'], JSON_UNESCAPED_UNICODE)}}</p>
                               </div>
-      
+
                               <div class="info">
                                    <div class="name">
-                                      <h6>{{json_encode($rate['name'], JSON_UNESCAPED_UNICODE)}}</h6> 
+                                      <h6>{{json_encode($rate['name'], JSON_UNESCAPED_UNICODE)}}</h6>
                                    </div>
                                    <div class="p-name">
                                         <p>{{json_encode($rate['p_name'], JSON_UNESCAPED_UNICODE)}}</p>
@@ -385,16 +385,16 @@
                                     <p>{{$rate['date']}}</p>
                                    </div>
                               </div>
-                      
+
                             </div>
                           </div>
-      
+
                           @elseif($rate['active'] == 0)
-                          
+
                           <div class="carousel-item">
-      
+
                             <div class="col-md-4">
-      
+
                               <div class="rating">
                                 @if($rate['rating']== 5)
                                 <i class="fa fa-star"></i>
@@ -407,7 +407,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i> 
+                                <i class="fa fa-star-o"></i>
                                 @elseif( $rate['rating'] == 3)
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -434,10 +434,10 @@
                               <div class="content">
                                 <p>{{json_encode($rate['content'], JSON_UNESCAPED_UNICODE)}}</p>
                               </div>
-      
+
                               <div class="info">
                                    <div class="name">
-                                      <h6>{{json_encode($rate['name'], JSON_UNESCAPED_UNICODE)}}</h6> 
+                                      <h6>{{json_encode($rate['name'], JSON_UNESCAPED_UNICODE)}}</h6>
                                    </div>
                                    <div class="p-name">
                                         <p>{{json_encode($rate['p_name'], JSON_UNESCAPED_UNICODE)}}</p>
@@ -446,36 +446,36 @@
                                     <p>{{$rate['date']}}</p>
                                    </div>
                               </div>
-                      
+
                             </div>
                           </div>
                           @endif
-                          
-                              
-                                      
-                                     
-                         
+
+
+
+
+
                           @endforeach
-                          
-                      
+
+
                         <!--.carousel-inner-->
                     </div>
                         <!--.carousel-inner-->
                     </div>
-      
+
                      </div>
                 </div>
-      
+
               </div>
-             
-    
+
+
           </section>
 
-      
 
-      
 
-    
+
+
+
 
 
 
@@ -505,18 +505,18 @@
               </div>
             </div>
               <div class="copy-rights">
-                
+
                 <p>copyright © 2020</p>
 
               </div>
-            
+
       </div>
     </footer>
-  
-   
-    
 
-<!--  
+
+
+
+<!--
     <footer></footer> -->
 
 
@@ -555,7 +555,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
 
 
-    <script>  
+    <script>
      AOS.init();
     </script>
 
@@ -564,18 +564,18 @@
   @if(Session::has('success'))
      toastr.success("{{ Session::get('success') }}")
  @endif
- 
+
  @if(Session::has('orange'))
     toastr.info("{{ Session::get('orange') }}")
  @endif
- 
+
  @if(Session::has('danger'))
     toastr.error("{{ Session::get('danger') }}")
  @endif
  </script>
 
-    
 
-    
+
+
   </body>
 </html>

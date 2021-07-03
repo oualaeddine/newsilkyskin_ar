@@ -6,26 +6,26 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-     
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link 
-    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
-    rel="stylesheet"  type='text/css'>    
-    
+    <link
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+    rel="stylesheet"  type='text/css'>
+
    <!--Custom css-->
    <link rel="stylesheet" href="{{ url('/assets/css/style.css') }}">
 
    <!-- Global site tag (gtag.js) - Google Analytics -->
 
-  
+
   </head>
   <body >
     <div class="text-center sold sticky_2">
-        <p>تخفيض 50 % + توصيل مجاني</p>
+        <p>تخفيض 11.11 % + توصيل مجاني</p>
       </div>
 
     <header>
@@ -37,34 +37,34 @@
               <i class="fas fa-align-right text-light"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              
+
             </div>
             <a class="navbar-brand" href="{{ url('/') }}" >
                 <img src="{{ url('/app_logo.png') }}" alt="app-icon" ></a>
           </nav>
         </div>
-     
+
     </div>
     </header>
-    
+
     <main>
         <section class="section-1-final" id="section-1-final" >
-        
+
             <div class="container text-center">
-                
+
                     <i class="fas fa-check-circle fa-5x" style="color: green"></i>
                     <div style="margin-top: 10px"> لقد تم تجسيل طلبكم بنجاح ستيم الإتصال بكم </div>
-                    
+
                     <div style="margin-top: 10px"> هاتفيا لتاكيد الطلب يرجى الرد على طلبنا الوارد من {{$phone_nb}}</div>
 
-                     <div style="margin-top: 10px"> !! شكرا </div> 
+                     <div style="margin-top: 10px"> !! شكرا </div>
 
 
                      <div style="margin-top: 10px"> <a href="#" class="btn primary-btn" style="color: white"> إنهاء التسوق</a></div>
 
-                
+
             </div>
-    
+
           </section>
 
     </main>
@@ -91,18 +91,18 @@
               </div>
             </div>
               <div class="copy-rights">
-                
+
                 <p>copyright © 2020</p>
 
               </div>
-            
+
       </div>
     </footer>
-  
-   
-    
 
-<!--  
+
+
+
+<!--
     <footer></footer> -->
 
 
@@ -138,12 +138,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script>  
+    <script>
      AOS.init();
     </script>
 
-    
 
-    
+
+
   </body>
 </html>

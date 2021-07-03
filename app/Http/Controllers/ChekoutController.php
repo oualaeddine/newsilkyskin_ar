@@ -18,8 +18,8 @@ class ChekoutController extends Controller
 
         $nb_rating = 120;
         $stars_nb = 5;
-        $price = number_format(17000, 2);
-        $discount_p = number_format(27000, 2);
+        $price = number_format(32000, 2);
+        $discount_p = number_format(36000, 2);
         $instagram_link = '#';
 
         $rating = array([
@@ -86,8 +86,8 @@ class ChekoutController extends Controller
 
         $nb_rating = 120;
         $stars_nb = 5;
-        $price = number_format(17000, 2);
-        $discount_p = number_format(27000, 2);
+        $price = number_format(32000, 2);
+        $discount_p = number_format(36000, 2);
 
         $instagram_link = '#';
 
@@ -159,8 +159,8 @@ class ChekoutController extends Controller
         $product_qte = $request->qte;
         $product_color = $request->p_color;
 
-        $price = number_format(17000, 2);
-        $discount_p = number_format(27000, 2);
+        $price = number_format(32000, 2);
+        $discount_p = number_format(36000, 2);
 
         return view('checkout', compact('product_color', 'product_qte', 'price', 'discount_p'));
 
@@ -169,7 +169,7 @@ class ChekoutController extends Controller
 
     public function order(Request $request)
     {
-dd($request);
+        dd($request);
         //all data in request
         $phone_nb = "0659266020";
         return view('final', compact('phone_nb'));
