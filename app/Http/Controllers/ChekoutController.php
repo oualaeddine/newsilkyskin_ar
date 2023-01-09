@@ -169,7 +169,7 @@ class ChekoutController extends Controller
 
     public function order(Request $request)
     {
-     //   dd($request);
+     // dd($request);
         //all data in request
         $phone_nb = "0659266020";
         return view('final', compact('phone_nb'));

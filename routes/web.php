@@ -13,45 +13,39 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::prefix("dz-ar",  function () {
+
+    Route::get('/', [
+
+        'uses' => 'ChekoutController@index',
+        'as' => 'checkout.index'
+
+    ]);
+
+    Route::get('/product', [
+
+        'uses' => 'ChekoutController@product',
+        'as' => 'checkout.product'
+
+    ]);
 
 
-Route::get('/', [
-     
-    'uses'=> 'ChekoutController@index' ,
-    'as' => 'checkout.index'
- 
- ]);
+    /*********** steeper methods  */
 
- Route::get('/product', [
-     
-    'uses'=> 'ChekoutController@product' ,
-    'as' => 'checkout.product'
- 
- ]);
- 
+    Route::post('/confirm', [
+        'uses' => 'ChekoutController@confirm',
+        'as' => 'checkout.confirm'
+    ]);
 
+    Route::post('/order', [
+        'uses' => 'ChekoutController@order',
+        'as' => 'checkout.order'
+    ]);
 
-
-/*********** steeper methods  */ 
-
- Route::post('/confirm', [ 
-    'uses'=> 'ChekoutController@confirm' ,
-    'as' => 'checkout.confirm'
- ]);
-
- Route::post('/order', [ 
-    'uses'=> 'ChekoutController@order' ,
-    'as' => 'checkout.order'
- ]);
-
- Route::post('/contact', [ 
-    'uses'=> 'ChekoutController@contact' ,
-    'as' => 'contact'
- ]);
-
- 
-
-
-
+    Route::post('/contact', [
+        'uses' => 'ChekoutController@contact',
+        'as' => 'contact'
+    ]);
+});
 
 
