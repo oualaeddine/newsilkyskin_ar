@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix("dz-ar",  function () {
+Route::prefix("dz-ar")->group(function () {
 
     Route::get('/', [
 
