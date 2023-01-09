@@ -40,7 +40,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
 
               </div>
-              <a class="navbar-brand" href="{{ url('/') }}" >
+              <a class="navbar-brand" href="{{ route('checkout.index') }}" >
                   <img src="{{ url('/app_logo.png') }}" alt="app-icon" ></a>
             </nav>
           </div>
@@ -56,7 +56,7 @@
 
                 <div class="col-md-6 img-responsive" >
 
-                  <form action="{{ url('/confirm') }}" method="post" enctype="multipart/form-data">
+                  <form action="{{ route('checkout.confirm') }}" method="post" enctype="multipart/form-data">
                     @csrf
                   <label class="" for="white" data-aos="fade_in" data-aos-duration="1000" id="white">
 

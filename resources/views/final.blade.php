@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
 
             </div>
-            <a class="navbar-brand" href="{{ url('/') }}" >
+            <a class="navbar-brand" href="{{ route('checkout.index') }}" >
                 <img src="{{ url('/app_logo.png') }}" alt="app-icon" ></a>
           </nav>
         </div>

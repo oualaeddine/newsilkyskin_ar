@@ -39,7 +39,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
 
               </div>
-              <a class="navbar-brand" href="{{ url('/') }}" >
+              <a class="navbar-brand" href="{{ route('checkout.index') }}" >
                   <img src="{{ url('/app_logo.png') }}" alt="app-icon" ></a>
             </nav>
           </div>
@@ -49,7 +49,7 @@
 
     <main>
         <section class="section-1-checkout" id="section-1-checkout">
-          <form action="{{ url('/order') }}" id="loginForm" class="container" method="post" enctype="multipart/form-data">
+          <form action="{{ route('checkout.order') }}" id="loginForm" class="container" method="post" enctype="multipart/form-data">
 
             <div class="container text-center">
               <div class="row">

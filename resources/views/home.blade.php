@@ -59,7 +59,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
 
                 </div>
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ route('checkout.index') }}">
                     <img src="{{ asset('app_logo.png', Request::secure()) }}" alt="app-icon"></a>
             </nav>
         </div>
@@ -81,11 +81,11 @@
                         كوني مدللة
                     </h4>
                     <br>
-                    <a class="shakeit btn primary-btn btn-primary btn-lg" href="{{ url('/product') }}" role="button"
+                    <a class="shakeit btn primary-btn btn-primary btn-lg" href="{{ route('checkout.product') }}" role="button"
                        data-aos="zoom-out" data-aos-duration="1000" for="pink" id="btn-shaky"> اشترِ الآن </a>
                 </div>
             </div>
-            <a class="shakeit btn primary-btn btn-primary btn-lg mobileshow_dis btn-mobile" href="{{ url('/product') }}"
+            <a class="shakeit btn primary-btn btn-primary btn-lg mobileshow_dis btn-mobile" href="{{ route('checkout.product') }}"
                role="button" for="pink" id="btn-shaky"> اشترِ الآن </a>
         </div>
 
@@ -105,15 +105,15 @@
                         بإمكانك استعمال جهاز ليزر نيو سيلكي سكين على جميع مناطق الجسم حتى الوجه و المنطقة الحساسة
                     </h4>
                     <br>
-                    <a class="shakeit btn primary-btn btn-primary btn-lg" href="{{ url('/product') }}" role="button"
+                    <a class="shakeit btn primary-btn btn-primary btn-lg" href="{{ route('checkout.product') }}" role="button"
                        for="pink" id="btn-shaky"> اشترِ الآن </a>
 
                 </div>
                 <div class="col-md-7 img-responsive" data-aos="fade-right" data-aos-duration="600">
-                    <a href="{{ url('/product') }}"> <img
+                    <a href="{{ route('checkout.product') }}"> <img
                             src="{{ asset('assets/assets/pg-2_1.jpg', Request::secure()) }}"
                             class="rounded image-pg-2-1 float-right" alt="image-pg-2"></a>
-                    <a href="{{ url('/product') }}"> <img
+                    <a href="{{ route('checkout.product') }}"> <img
                             src="{{ asset('assets/assets/pg-2_2.jpg', Request::secure()) }}"
                             class="rounded image-pg-2-2 float-left" alt="image-pg-2"> </a>
                 </div>
@@ -129,7 +129,7 @@
 
                 <div class="col-md-6 img-responsive">
 
-                    <form action="{{ url('/confirm') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('checkout.confirm') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <label class="" for="white" data-aos="fade_in" data-aos-duration="1000" id="white">
 
@@ -229,7 +229,7 @@
             <h1>تواصل معنا </h1>
 
             <div class="row">
-                <form action="{{ url('/contact') }}" class="container first-form" method="post"
+                <form action="{{ route('contact') }}" class="container first-form" method="post"
                       enctype="multipart/form-data" style="width: 100%">
                     @csrf
                     <div class="form-row ">
