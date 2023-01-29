@@ -171,18 +171,18 @@ class ChekoutController extends Controller
 
     public function order(Request $request)
     {
-        dd($request->all());
         //all data in request
 
 
         $order = new Order();
-        $order->name = $request->firstname;
+        $order->name = $request->name;
         $order->phone = $request->phone;
-        $order->wilaya = $request->state;
-        $order->comments = 'The Picked color is : ' . $request->color;
-        $order->store_id = 1;
+        $order->wilaya = $request->wilaya;
+        $order->comments = 'The Picked color is : ' . $request->product_color;
+        $order->store_id = $request->product_qte;
         $order->last_status = 'new';
         $order->save();
+        dd($request->all());
 
 
         $order_product = new OrderProduct();
