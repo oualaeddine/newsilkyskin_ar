@@ -404,13 +404,13 @@
                             <a href="#">تتبع طلبك</a>
                         </div>--}}
             <div class="col-md-2">
-                <a href="#">سياسة الخصوصية</a>
+                <a href="/policy">سياسة الخصوصية</a>
             </div>
             {{--            <div class="col-md-2">
                             <a href="#">سياسة الشحن</a>
                         </div>--}}
             <div class="col-md-2">
-                <a href="#">سياسة الخدمة</a>
+                <a href="/terms">سياسة الخدمة</a>
             </div>
             {{--   <div class="col-md-2">
                    <a href="#">ضمان استرداد الأموال</a>
