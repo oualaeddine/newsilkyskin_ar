@@ -397,27 +397,27 @@
         </div>
     </section>
 </main>
-<footer class="footer-main">
+<footer class="footer-theard">
     <div class="container text-center">
         <div class="row text-center">
-            <div class="col-md-2">
-                <a href="#">تتبع طلبك</a>
-            </div>
+            {{--            <div class="col-md-2">
+                            <a href="#">تتبع طلبك</a>
+                        </div>--}}
             <div class="col-md-2">
                 <a href="#">سياسة الخصوصية</a>
             </div>
-            <div class="col-md-2">
-                <a href="#">سياسة الشحن</a>
-            </div>
+            {{--            <div class="col-md-2">
+                            <a href="#">سياسة الشحن</a>
+                        </div>--}}
             <div class="col-md-2">
                 <a href="#">سياسة الخدمة</a>
             </div>
-            <div class="col-md-2">
-                <a href="#">ضمان استرداد الأموال</a>
-            </div>
-            <div class="col-md-2">
-                <a href="#">الأسئلة الشائعة</a>
-            </div>
+            {{--   <div class="col-md-2">
+                   <a href="#">ضمان استرداد الأموال</a>
+               </div>--}}
+            {{--            <div class="col-md-2">
+                            <a href="#">الأسئلة الشائعة</a>
+                        </div>--}}
         </div>
         <div class="copy-rights">
             <p>copyright © 2020</p>
