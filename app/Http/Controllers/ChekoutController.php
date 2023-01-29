@@ -22,7 +22,7 @@ class ChekoutController extends Controller
         $stars_nb = 5;
         $price = number_format(37999, 2);
         $discount_p = number_format(42600, 2);
-        $instagram_link = '#';
+        $instagram_link = 'https://www.instagram.com/newsilkyskin/';
 
         $rating = array([
             "rating" => "5",
@@ -91,7 +91,7 @@ class ChekoutController extends Controller
         $price = number_format(37999, 2);
         $discount_p = number_format(42600, 2);
 
-        $instagram_link = '#';
+        $instagram_link = 'https://www.instagram.com/newsilkyskin/';
 
         $rating = array([
             "rating" => "5",

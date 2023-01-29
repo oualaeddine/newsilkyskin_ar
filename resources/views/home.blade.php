@@ -258,9 +258,9 @@
                         </a>
 
                         <!-- Carousel items -->
-                        <div class="carousel-inner">
+                      {{--  <div class="carousel-inner">
 
-                            @foreach ($rating as $rate)
+                    --}}{{--        @foreach ($rating as $rate)
 
                                 @if($rate['active'] == 1)
                                     <div class="carousel-item active">
@@ -384,11 +384,11 @@
                                     </div>
                                 @endif
 
-                            @endforeach
+                            @endforeach--}}{{--
 
 
                             <!--.carousel-inner-->
-                        </div>
+                        </div>--}}
 
                     </div>
                 </div>
