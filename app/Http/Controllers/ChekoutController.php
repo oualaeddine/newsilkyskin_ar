@@ -171,7 +171,7 @@ class ChekoutController extends Controller
     {
      // dd($request);
         //all data in request
-        $phone_nb = "0770 49 68 66";
+        $phone_nb = "0770496866";
         return view('final', compact('phone_nb'));
     }
 
