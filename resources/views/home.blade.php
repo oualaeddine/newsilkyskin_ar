@@ -198,7 +198,8 @@
                     </div>
                     <div class="col text-center">
                         <button class="btn primary-btn btn-primary center btn-lg" role="submit" id="btn-shaky">
-                            إرسال</button>
+                            إرسال
+                        </button>
                     </div>
                 </form>
             </div>
@@ -244,154 +245,154 @@
                     <a class="nav-link" href="{{$instagram_link}}"><i class="fab fa-instagram fa-3x"></i></a>
                 </div>
 
-             {{--   <div class="col-md-9 text-center">
+                {{--   <div class="col-md-9 text-center">
 
-                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                       <div id="blogCarousel" class="carousel slide" data-ride="carousel">
 
-                        <a class="carousel-control-prev" href="#blogCarousel" role="button" data-slide="prev">
-                            <i class="fa fa-arrow-left"></i>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#blogCarousel" role="button" data-slide="next">
-                            <i class="fa fa-arrow-right"></i>
-                            <span class="sr-only" style="color: black">Next</span>
-                        </a>
+                           <a class="carousel-control-prev" href="#blogCarousel" role="button" data-slide="prev">
+                               <i class="fa fa-arrow-left"></i>
+                               <span class="sr-only">Previous</span>
+                           </a>
+                           <a class="carousel-control-next" href="#blogCarousel" role="button" data-slide="next">
+                               <i class="fa fa-arrow-right"></i>
+                               <span class="sr-only" style="color: black">Next</span>
+                           </a>
 
-                        <!-- Carousel items -->
-                      --}}{{--  <div class="carousel-inner">
+                           <!-- Carousel items -->
+                         --}}{{--  <div class="carousel-inner">
 
-                    --}}{{----}}{{--        @foreach ($rating as $rate)
+                       --}}{{----}}{{--        @foreach ($rating as $rate)
 
-                                @if($rate['active'] == 1)
-                                    <div class="carousel-item active">
+                                   @if($rate['active'] == 1)
+                                       <div class="carousel-item active">
 
-                                        <div class="col-md-4">
+                                           <div class="col-md-4">
 
-                                            <div class="rating">
-                                                @if($rate['rating']== 5)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                @elseif($rate['rating'] == 4)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                @elseif( $rate['rating'] == 3)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                @elseif($rate['rating'] == 2)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                @elseif($rate['rating'] == 1)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                @endif
-                                            </div>
-                                            <div class="title">
-                                                <h6>{{json_encode($rate['title'], JSON_UNESCAPED_UNICODE)}}</h6>
-                                            </div>
-                                            <div class="content">
-                                                <p>{{json_encode($rate['content'], JSON_UNESCAPED_UNICODE)}}</p>
-                                            </div>
+                                               <div class="rating">
+                                                   @if($rate['rating']== 5)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                   @elseif($rate['rating'] == 4)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                   @elseif( $rate['rating'] == 3)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                   @elseif($rate['rating'] == 2)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                   @elseif($rate['rating'] == 1)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                   @endif
+                                               </div>
+                                               <div class="title">
+                                                   <h6>{{json_encode($rate['title'], JSON_UNESCAPED_UNICODE)}}</h6>
+                                               </div>
+                                               <div class="content">
+                                                   <p>{{json_encode($rate['content'], JSON_UNESCAPED_UNICODE)}}</p>
+                                               </div>
 
-                                            <div class="info">
-                                                <div class="name">
-                                                    <h6>{{json_encode($rate['name'], JSON_UNESCAPED_UNICODE)}}</h6>
-                                                </div>
-                                                <div class="p-name">
-                                                    <p>{{json_encode($rate['p_name'], JSON_UNESCAPED_UNICODE)}}</p>
-                                                </div>
-                                                <div class="date">
-                                                    <p>{{$rate['date']}}</p>
-                                                </div>
-                                            </div>
+                                               <div class="info">
+                                                   <div class="name">
+                                                       <h6>{{json_encode($rate['name'], JSON_UNESCAPED_UNICODE)}}</h6>
+                                                   </div>
+                                                   <div class="p-name">
+                                                       <p>{{json_encode($rate['p_name'], JSON_UNESCAPED_UNICODE)}}</p>
+                                                   </div>
+                                                   <div class="date">
+                                                       <p>{{$rate['date']}}</p>
+                                                   </div>
+                                               </div>
 
-                                        </div>
-                                    </div>
+                                           </div>
+                                       </div>
 
-                                @elseif($rate['active'] == 0)
+                                   @elseif($rate['active'] == 0)
 
-                                    <div class="carousel-item">
+                                       <div class="carousel-item">
 
-                                        <div class="col-md-4">
+                                           <div class="col-md-4">
 
-                                            <div class="rating">
-                                                @if($rate['rating']== 5)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                @elseif($rate['rating'] == 4)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                @elseif( $rate['rating'] == 3)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                @elseif($rate['rating'] == 2)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                @elseif($rate['rating'] == 1)
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                @endif
-                                            </div>
-                                            <div class="title">
-                                                <h6>{{json_encode($rate['title'], JSON_UNESCAPED_UNICODE)}}</h6>
-                                            </div>
-                                            <div class="content">
-                                                <p>{{json_encode($rate['content'], JSON_UNESCAPED_UNICODE)}}</p>
-                                            </div>
+                                               <div class="rating">
+                                                   @if($rate['rating']== 5)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                   @elseif($rate['rating'] == 4)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                   @elseif( $rate['rating'] == 3)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                   @elseif($rate['rating'] == 2)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                   @elseif($rate['rating'] == 1)
+                                                       <i class="fa fa-star"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                       <i class="fa fa-star-o"></i>
+                                                   @endif
+                                               </div>
+                                               <div class="title">
+                                                   <h6>{{json_encode($rate['title'], JSON_UNESCAPED_UNICODE)}}</h6>
+                                               </div>
+                                               <div class="content">
+                                                   <p>{{json_encode($rate['content'], JSON_UNESCAPED_UNICODE)}}</p>
+                                               </div>
 
-                                            <div class="info">
-                                                <div class="name">
-                                                    <h6>{{json_encode($rate['name'], JSON_UNESCAPED_UNICODE)}}</h6>
-                                                </div>
-                                                <div class="p-name">
-                                                    <p>{{json_encode($rate['p_name'], JSON_UNESCAPED_UNICODE)}}</p>
-                                                </div>
-                                                <div class="date">
-                                                    <p>{{$rate['date']}}</p>
-                                                </div>
-                                            </div>
+                                               <div class="info">
+                                                   <div class="name">
+                                                       <h6>{{json_encode($rate['name'], JSON_UNESCAPED_UNICODE)}}</h6>
+                                                   </div>
+                                                   <div class="p-name">
+                                                       <p>{{json_encode($rate['p_name'], JSON_UNESCAPED_UNICODE)}}</p>
+                                                   </div>
+                                                   <div class="date">
+                                                       <p>{{$rate['date']}}</p>
+                                                   </div>
+                                               </div>
 
-                                        </div>
-                                    </div>
-                                @endif
+                                           </div>
+                                       </div>
+                                   @endif
 
-                            @endforeach--}}{{----}}{{--
+                               @endforeach--}}{{----}}{{--
 
 
-                            <!--.carousel-inner-->
-                        </div>--}}{{--
+                               <!--.carousel-inner-->
+                           </div>--}}{{--
 
-                    </div>
-                </div>--}}
+                       </div>
+                   </div>--}}
 
             </div>
         </div>
@@ -421,7 +422,8 @@
         </div>
         <div class="copy-rights">
             <p>copyright © 2020</p>
-            <p>This site is not part of the Facebook website or META Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of META, Inc.</p>
+            <p>This site is not part of the Facebook website or META Inc. Additionally, this site is NOT endorsed by
+                Facebook in any way. FACEBOOK is a trademark of META, Inc.</p>
         </div>
     </div>
 </footer>
