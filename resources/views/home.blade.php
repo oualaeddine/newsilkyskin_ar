@@ -174,7 +174,7 @@
     </section>
     <section class="section-4" id="section-4">
         <div class="container text-right" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-            <h1>تواصل معنا </h1>
+            <h1>تواصل معنا  <a href="tel:0770496866">0770496866</a></h1>
             <div class="row">
                 <form action="{{ route('contact') }}" class="container first-form" method="post"
                       enctype="multipart/form-data" style="width: 100%">
