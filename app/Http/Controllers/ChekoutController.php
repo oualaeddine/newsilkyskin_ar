@@ -180,13 +180,13 @@ class ChekoutController extends Controller
         $order->phone = $request->phone;
         $order->wilaya = $request->wilaya;
         $order->comments = 'The Picked color is : ' . $request->product_color;
-        $order->store_id = $request->product_qte;
+        $order->store_id = 1;
         $order->last_status = 'new';
         $order->save();
 
         $order_product = new OrderProduct();
         $order_product->product_id = 1;
-        $order_product->quantity = 1;
+        $order_product->quantity = $request->product_qte;
         $order_product->price = 37999;
         $order_product->order_id = $order->id;
         $order_product->save();
