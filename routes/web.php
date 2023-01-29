@@ -21,12 +21,12 @@ Route::get('/', [
 
 ]);
 
-Route::post('/policy', [
+Route::get('/policy', [
     'uses' => 'ChekoutController@policy',
     'as' => 'policy'
 ]);
 
-Route::post('/terms', [
+Route::get('/terms', [
     'uses' => 'ChekoutController@terms',
     'as' => 'terms'
 ]);
