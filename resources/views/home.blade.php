@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class="text-center sold sticky_2">
-    <p>تخفيض 11.11 % + توصيل مجاني</p>
+    <p>تخفيض 10.80 % + توصيل مجاني</p>
 </div>
 <header>
     <div class="container-fluid header-main p-0">
