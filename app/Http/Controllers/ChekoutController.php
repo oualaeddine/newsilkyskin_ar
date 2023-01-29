@@ -171,7 +171,7 @@ class ChekoutController extends Controller
 
     public function order(Request $request)
     {
-        dd($request);
+        dd($request->all());
         //all data in request
 
 
