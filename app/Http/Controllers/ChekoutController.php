@@ -172,6 +172,7 @@ class ChekoutController extends Controller
     public function order(Request $request)
     {
         //all data in request
+        //dd($request->all());
 
 
         $order = new Order();
@@ -182,8 +183,6 @@ class ChekoutController extends Controller
         $order->store_id = $request->product_qte;
         $order->last_status = 'new';
         $order->save();
-        dd($request->all());
-
 
         $order_product = new OrderProduct();
         $order_product->product_id = 1;
