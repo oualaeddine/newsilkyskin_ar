@@ -270,4 +270,17 @@ class ChekoutController extends Controller
     {
         //
     }
+
+
+    public function policy()
+    {
+        return view('policy');
+    }
+
+
+    public function terms()
+    {
+        return view('terms');
+    }
+
 }

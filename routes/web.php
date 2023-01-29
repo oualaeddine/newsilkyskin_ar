@@ -47,6 +47,16 @@ Route::post('/contact', [
 ]);
 
 
+Route::post('/policy', [
+    'uses' => 'ChekoutController@policy',
+    'as' => 'contact'
+]);
+
+Route::post('/terms', [
+    'uses' => 'ChekoutController@terms',
+    'as' => 'contact'
+]);
+
 
 
 
