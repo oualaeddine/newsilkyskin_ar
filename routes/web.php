@@ -21,6 +21,16 @@ Route::get('/', [
 
 ]);
 
+Route::post('/policy', [
+    'uses' => 'ChekoutController@policy',
+    'as' => 'policy'
+]);
+
+Route::post('/terms', [
+    'uses' => 'ChekoutController@terms',
+    'as' => 'terms'
+]);
+
 Route::get('/product', [
 
     'uses' => 'ChekoutController@product',
@@ -47,15 +57,7 @@ Route::post('/contact', [
 ]);
 
 
-Route::post('/policy', [
-    'uses' => 'ChekoutController@policy',
-    'as' => 'contact'
-]);
 
-Route::post('/terms', [
-    'uses' => 'ChekoutController@terms',
-    'as' => 'contact'
-]);
 
 
 
