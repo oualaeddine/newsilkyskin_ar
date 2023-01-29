@@ -45,7 +45,7 @@
             <div style="margin-top: 10px"> هاتفيا لتاكيد الطلب يرجى الرد على طلبنا الوارد من <a
                     href="tel:0770496866">{{$phone_nb}}</a></div>
             <div style="margin-top: 10px"> !! شكرا</div>
-            <div style="margin-top: 10px"><a href="#" class="btn primary-btn" style="color: white"> إنهاء التسوق</a>
+            <div style="margin-top: 10px"><a href="/" class="btn primary-btn" style="color: white"> إنهاء التسوق</a>
             </div>
         </div>
     </section>
