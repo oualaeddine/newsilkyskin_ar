@@ -573,6 +573,8 @@
         </div>
         <div class="copy-rights">
             <p>copyright © 2020</p>
+            <p>This site is not part of the Facebook website or META Inc. Additionally, this site is NOT endorsed by
+                Facebook in any way. FACEBOOK is a trademark of META, Inc.</p>
         </div>
     </div>
 </footer>
