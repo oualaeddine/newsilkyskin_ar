@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
+use App\Models\OrderProduct;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
@@ -169,8 +171,28 @@ class ChekoutController extends Controller
 
     public function order(Request $request)
     {
-     // dd($request);
+        dd($request);
         //all data in request
+
+
+        $order = new Order();
+        $order->name = $request->firstname;
+        $order->phone = $request->phone;
+        $order->wilaya = $request->state;
+        $order->comments = 'The Picked color is : ' . $request->color;
+        $order->store_id = 1;
+        $order->last_status = 'new';
+        $order->save();
+
+
+        $order_product = new OrderProduct();
+        $order_product->product_id = 1;
+        $order_product->quantity = 1;
+        $order_product->price = 37999;
+        $order_product->order_id = $order->id;
+        $order_product->save();
+
+
         $phone_nb = "0770496866";
         return view('final', compact('phone_nb'));
     }
