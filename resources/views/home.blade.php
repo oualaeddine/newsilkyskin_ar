@@ -244,7 +244,7 @@
                     <a class="nav-link" href="{{$instagram_link}}"><i class="fab fa-instagram fa-3x"></i></a>
                 </div>
 
-                <div class="col-md-9 text-center">
+             {{--   <div class="col-md-9 text-center">
 
                     <div id="blogCarousel" class="carousel slide" data-ride="carousel">
 
@@ -258,9 +258,9 @@
                         </a>
 
                         <!-- Carousel items -->
-                      {{--  <div class="carousel-inner">
+                      --}}{{--  <div class="carousel-inner">
 
-                    --}}{{--        @foreach ($rating as $rate)
+                    --}}{{----}}{{--        @foreach ($rating as $rate)
 
                                 @if($rate['active'] == 1)
                                     <div class="carousel-item active">
@@ -384,14 +384,14 @@
                                     </div>
                                 @endif
 
-                            @endforeach--}}{{--
+                            @endforeach--}}{{----}}{{--
 
 
                             <!--.carousel-inner-->
-                        </div>--}}
+                        </div>--}}{{--
 
                     </div>
-                </div>
+                </div>--}}
 
             </div>
         </div>
