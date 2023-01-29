@@ -130,7 +130,7 @@
         </form>
     </section>
 </main>
-<footer class="footer-theard">
+<footer class="footer-second">
     <div class="container text-center">
         <div class="row text-center">
             {{--            <div class="col-md-2">
