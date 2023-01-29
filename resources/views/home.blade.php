@@ -242,7 +242,7 @@
                         <i class="fa fa-star-o"></i>
                     @endif
                     <h6>From {{$nb_rating}} reviews</h6>
-                    <a class="nav-link" href="{{$instagram_link}}"><i class="fab fa-instagram fa-3x"></i></a>
+                    <a class="nav-link" href="{{$instagram_link}}" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
                 </div>
 
                 {{--   <div class="col-md-9 text-center">
