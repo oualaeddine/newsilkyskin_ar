@@ -15,6 +15,37 @@
         href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
         rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="{{ url('/assets/css/style.css') }}">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '955374178589673');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=955374178589673&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <script>
+        fbq('track', 'Purchase');
+    </script>
 </head>
 <body>
 <div class="text-center sold sticky_2">
@@ -53,9 +84,9 @@
 <footer class="footer-theard">
     <div class="container text-center">
         <div class="row text-center">
-{{--            <div class="col-md-2">
-                <a href="#">تتبع طلبك</a>
-            </div>--}}
+            {{--            <div class="col-md-2">
+                            <a href="#">تتبع طلبك</a>
+                        </div>--}}
             <div class="col-md-2">
                 <a href="/policy">سياسة الخصوصية</a>
             </div>
@@ -65,16 +96,17 @@
             <div class="col-md-2">
                 <a href="/terms">سياسة الخدمة</a>
             </div>
-         {{--   <div class="col-md-2">
-                <a href="#">ضمان استرداد الأموال</a>
-            </div>--}}
-{{--            <div class="col-md-2">
-                <a href="#">الأسئلة الشائعة</a>
-            </div>--}}
+            {{--   <div class="col-md-2">
+                   <a href="#">ضمان استرداد الأموال</a>
+               </div>--}}
+            {{--            <div class="col-md-2">
+                            <a href="#">الأسئلة الشائعة</a>
+                        </div>--}}
         </div>
         <div class="copy-rights">
             <p>copyright © 2020</p>
-            <p>This site is not part of the Facebook website or META Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of META, Inc.</p>
+            <p>This site is not part of the Facebook website or META Inc. Additionally, this site is NOT endorsed by
+                Facebook in any way. FACEBOOK is a trademark of META, Inc.</p>
         </div>
     </div>
 </footer>
