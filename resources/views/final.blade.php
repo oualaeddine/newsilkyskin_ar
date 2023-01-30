@@ -44,7 +44,7 @@
     <!-- End Meta Pixel Code -->
 
     <script>
-        fbq('track', 'Purchase');
+        fbq('track', 'Purchase',{currency: "DZD", value: 37999.00});
     </script>
 </head>
 <body>
