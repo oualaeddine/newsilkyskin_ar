@@ -20,8 +20,8 @@ class ChekoutController extends Controller
 
         $nb_rating = 120;
         $stars_nb = 5;
-        $price = number_format(34999, 2);
-        $discount_p = number_format(39600, 2);
+        $price = number_format(29600, 2);
+        $discount_p = number_format(34990, 2);
         $instagram_link = 'https://www.instagram.com/newsilkyskin/';
 
         $rating = array([
@@ -88,8 +88,8 @@ class ChekoutController extends Controller
 
         $nb_rating = 120;
         $stars_nb = 5;
-        $price = number_format(34999, 2);
-        $discount_p = number_format(39600, 2);
+        $price = number_format(29600, 2);
+        $discount_p = number_format(34990, 2);
 
         $instagram_link = 'https://www.instagram.com/newsilkyskin/';
 
@@ -161,8 +161,8 @@ class ChekoutController extends Controller
         $product_qte = $request->qte;
         $product_color = $request->p_color;
 
-        $price = number_format(34999, 2);
-        $discount_p = number_format(39600, 2);
+        $price = number_format(29600, 2);
+        $discount_p = number_format(34990, 2);
 
         return view('checkout', compact('product_color', 'product_qte', 'price', 'discount_p'));
 

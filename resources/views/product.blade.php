@@ -431,7 +431,7 @@
             <hr>
         </div>
     </section>
-    <section class="section-2-product" id="section-2-product">
+  {{--  <section class="section-2-product" id="section-2-product">
         <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <div class="row">
                 <div class="col-md-3 text-center">
@@ -601,7 +601,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>--}}
 </main>
 <footer class="footer-second_p">
     <div class="container text-center">

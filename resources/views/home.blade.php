@@ -259,7 +259,7 @@
             </div>
         </div>
     </section>
-    <section class="section-5" id="section-5">
+  {{--  <section class="section-5" id="section-5">
         <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <div class="row">
                 <div class="col-md-3 text-center">
@@ -299,7 +299,7 @@
                     <a class="nav-link" href="{{$instagram_link}}" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
                 </div>
 
-                {{--   <div class="col-md-9 text-center">
+                --}}{{--   <div class="col-md-9 text-center">
 
                        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
 
@@ -313,9 +313,9 @@
                            </a>
 
                            <!-- Carousel items -->
-                         --}}{{--  <div class="carousel-inner">
+                         --}}{{----}}{{--  <div class="carousel-inner">
 
-                       --}}{{----}}{{--        @foreach ($rating as $rate)
+                       --}}{{----}}{{----}}{{----}}{{--        @foreach ($rating as $rate)
 
                                    @if($rate['active'] == 1)
                                        <div class="carousel-item active">
@@ -439,18 +439,18 @@
                                        </div>
                                    @endif
 
-                               @endforeach--}}{{----}}{{--
+                               @endforeach--}}{{----}}{{----}}{{----}}{{--
 
 
                                <!--.carousel-inner-->
-                           </div>--}}{{--
+                           </div>--}}{{----}}{{--
 
                        </div>
-                   </div>--}}
+                   </div>--}}{{--
 
             </div>
         </div>
-    </section>
+    </section>--}}
 </main>
 <footer class="footer-main">
     <div class="container text-center">
